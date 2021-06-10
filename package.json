@@ -1,0 +1,68 @@
+{
+  "name": "aqttable",
+  "version": "1.1.0",
+  "description": "reactjs tabletop interface to AIDS Memorial Quilt data",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "author": "Dale MacDonald",
+  "license": "ISC",
+  "olddependencies": {
+    "axios": "^0.15.3",
+    "babel-preset-stage-2": "^6.24.1",
+    "marked": "^0.3.6",
+    "promise": "^7.1.1",
+    "react": "^15.3.2",
+    "react-axios": "0.0.9",
+    "react-dom": "^15.3.2",
+    "react-infinite-scroll-component": "^2.5.0",
+    "react-marked": "^0.3.1",
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.16.2"
+  },
+  "dependencies": {
+    "@testing-library/dom": "^7.31.2",
+    "@testing-library/jest-dom": "^5.13.0",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^13.1.9",
+    "axios": "^0.21.1",
+    "jquery": "^3.6.0",
+    "marked": "^2.0.7",
+    "openseadragon": "^2.4.2",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-axios": "^2.0.5",
+    "react-dom": "^17.0.2",
+    "react-infinite-scroll-component": "^6.1.0",
+    "react-scripts": "4.0.3",
+    "react-vimeo": "^2.0.0",
+    "typescript": "^4.3.2",
+    "web-vitals": "^2.0.1"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/UTDATECPIRL/AQTTable/repository.git"
+  }
+}

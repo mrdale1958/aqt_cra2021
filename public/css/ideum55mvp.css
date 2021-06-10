@@ -1,0 +1,674 @@
+
+body {
+    width: 1920px;
+    height: 1080px;
+    background-color: transparent;
+    background-repeat:no-repeat;
+    background-image: url("heididesigns/AQT_LA_TouchScreen_bg_v3.png");    
+    margin: 0px;
+}
+
+DIV.movable {
+    position:relative;
+}
+
+/**********************************************
+ *
+ *  Main buttons
+ *
+ **********************************************/
+
+
+.aboutBtn {
+    background-color: rgb(180,40,46);
+     display: inline-block;
+  
+
+}
+#aboutTriangle {
+    fill:rgb(180,40,46);
+ }
+ 
+#buttons {
+    margin-left:175px;
+    /* margin-left:75px; */
+    position:absolute;
+    top: 887px;
+}
+
+#buttons.home {
+    margin-left:169px;
+    /* margin-left:69px; */
+    position:absolute;
+    top: 887px;
+}
+
+.button_holder {
+        display: inline-block;
+    *display: inline;
+    margin-top: 0px;
+height: 100px; 
+    width:100%;
+    position: absolute;
+    left: 0;
+    bottom: 0; 
+    margin-left:45px;
+}
+
+.buttons_holder {
+    width: 100%;
+    background-color: #ffffff;
+    display: none;
+}
+
+.creditsinner {
+    background-color:rgb(86,12,112);
+}
+
+
+.exploreBtn {
+    background-color: rgb(86,12,112);
+    display: inline-block;
+ 
+}
+
+#exploreTriangle {
+    fill:rgb(86,12,112);
+}
+
+.factsinner {
+    background-color:rgb(3,103,70);
+}
+
+
+.historyinner {
+    background-color:rgb(209, 68, 20);
+}
+
+.homeBtn {
+    display: inline-block;
+    background-color: transparent;
+    background-repeat:no-repeat;
+    border-style: none;
+    background-image: url("heididesigns/AQT_LA_TouchScreen_logo_v3-01.png");
+    background-size: contain;
+    width: 108px;
+    height:105px;
+    top: 30px;
+    left: 57px;
+    position:relative;
+}
+
+.homeBtn.home {
+    height: 117px;
+    width: 121px;
+    top: -524px;
+    /* top: -634px; */
+    left: 150px;
+    /* left: 1588px; */
+}
+.homeBtn.away {
+    width: 108px;
+    height:105px;
+    top: 30px;
+    left: 57px;
+}
+
+
+.innerNaviBtn {
+    color: rgb(255,255,255);
+    font-family: gotham;
+    font-size: 30pt;
+       width: 351px;
+    height: 107px;
+    margin: 12px 0px 12px 0px;
+    border-style: none;
+}
+
+.namesBtn {
+    background-color: rgb(209, 68, 20);
+    display: inline-block;
+
+}
+
+
+#namesTriangle {
+    fill:rgb(209, 68, 20);
+}
+
+.naviBtn {
+    color: rgb(255,255,255);
+    font-family: gotham;
+    font-size: 30pt;
+       width: 261px;
+    height: 107px;
+    margin: 3px 12px 0px 12px;
+    border-style: none;
+}
+.naviBtn.home {
+    font-size: 34pt;
+    width: 407.5px;
+    height: 114px;
+    margin: 0px 24px 0px 24px;
+    /* margin: 0px 12px 0px 12px; */
+}
+
+
+.storiesBtn {
+    background-color: rgb(3,103,70);
+    display: inline-block;
+ 
+}
+
+#storiesTriangle {
+    fill:rgb(3,103,70);
+ }
+ 
+ .stretch {
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+}
+
+
+.triangle {
+    position:relative;
+    display:none;
+    top:-70px;
+    left:240px;
+    width:54px;
+    height:50px;
+    margin-left:-58px;
+}
+
+/****************************************
+ *
+ * Home page interface
+ *
+ ****************************************/
+
+#splash {
+    background-image: "heididesigns/AQT_LA_TouchScreen_HOME_v4.png";    
+}
+
+.thin_title {
+    font-family: gotham;
+	font-weight:100;
+    font-size: 110pt;
+    margin: 0px 60px 0px 0px ;
+}
+
+.thick_title {
+    font-family: gotham;
+	font-weight:600;
+    font-size: 110pt;
+    margin: 0px 38px 0px 0px ;
+}
+
+#main_title {
+    position:absolute;
+    top: 342px;
+    left: 120px;
+    display: none;
+    z-index: 10;
+}
+
+#main_title.home {
+    display: block;
+}
+
+
+#quickfact {
+    position:absolute;
+    top: 664px;
+    left: 120px;    
+    font-family: gotham-book;
+    font-size: 24pt;
+    color: rgb(175,38,38);
+     display: none;
+     z-index: 10;
+}
+
+
+#quickfact_label {
+    font-weight: bold;
+ }
+#quickfact_text {
+    font-weight: normal;
+ }
+
+.interface_box {
+    width:100%;
+    height: 872px;
+    color: white;
+    font-family: gotham-book;
+    font-size:20pt;
+    z-index: 1000;
+   
+}
+
+/****************************************
+ *
+ * Names interface
+ *
+ ****************************************/
+
+ #alphabet {
+    display: inline;
+}
+
+#back_space {
+       width: 145px;
+    height: 132px;
+    background-color: rgb(86,12,112);
+    position: absolute;
+    top: 502px;
+    color: white;
+    text-align: center;
+}
+
+#back_space_x {
+    position: absolute;
+    top: 50px;
+    color: white;
+    text-align: center;
+    left: 68px;
+    position: absolute;
+    top: 37px;
+    left: 68;
+    font-family: gotham-medium;
+    font-size: 38pt;
+}
+
+#bs_icon {
+    position: absolute;
+    left:-2px;
+}
+
+.dataView {
+	height:20px;
+}
+.embedded_instruction {
+    font-size: 12pt;
+}
+
+.gesture_box {
+    background-color: white;
+    height: 100%;
+    color: rgb(209, 68, 20);
+}
+
+#gesture_help {
+        background-color: rgb(180,40,46);
+    width: 145px;
+    height: 132px;
+    /* background-color: rgb(86,12,112); */
+    position: absolute;
+    top: 502px;
+    color: white;
+    text-align: center;
+    font-size: 38pt;
+}
+
+#gesture_help_i {
+        position: absolute;
+    top: 37px;
+    left: 68px;
+    font-family: gotham-medium;
+}
+
+.hand_button {
+    color: white;
+    width: 100%;
+    height: 30px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    font-weight: bold;
+    /* position: relative; */
+    /* float: right; */
+    margin: 12px 0 12px 0;
+}
+#hand_buttons {
+        width: 40%;
+        position: relative;
+        top: 360px;
+        
+}
+
+#help_icon {
+    position: absolute;
+    left:0;
+}
+
+#leftHand {
+    background-color: rgb(209, 68, 20);
+    top: 360px;
+
+}
+.letter {
+       color: rgb(255,255,255);
+    font-family: gotham;
+    font-size: 20pt;
+    font-weight: bold;
+    width: 351px;
+    height: 107px;
+    margin: 12px 12px 12px 12px;
+    /* margin: 12px 6px 12px 6px; */
+    border-style: none;
+    display:inline;
+    
+}
+
+.metakey {
+	font-size: 12pt;
+	display:inline-block;
+	
+}
+
+.metavalue {
+	font-size: 12pt;
+	font-weight: bold;
+	display:inline-block;
+	margin-left:8px;
+}
+
+.name {
+    display: inline-block;
+    color: rgb(255,255,255);
+    margin-right: 20px;
+    height: 10px;
+}
+
+.name p {
+    display: inline-block;
+    margin:0 0 0 0;
+	font-family: gotham;
+    font-size: 14pt;
+    /* wants to have vertical pitch of 15px */
+    margin-bottom: 0px;
+}
+
+#namedPanelView {
+}
+
+#namedPanelView h1{
+	padding:0;
+}
+
+
+.nameField {
+    font-family: gotham;
+    font-size: 12pt;
+    /* wants to have vertical pitch of 15px */
+    margin-bottom: 0px;
+}
+
+
+.nameNode {
+    display: inline-block;
+    height:36px;
+
+}
+
+#names {
+    display: none;
+     background-color: rgb(209, 68, 20);
+}
+#names h1{
+    font-size: 39pt;
+    text-align: left;
+    padding-top: 154px;
+}
+
+#namedBack {
+	width: 107px;
+	height: 97px;
+    background-color: rgb(3,103,70);
+	fill: white;
+    margin-left:0px;
+    position:absolute;
+    top: 775px;
+    left:0;
+	}	
+	
+.namedBox h1 {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 22px;
+
+}
+
+.namesBox {
+    border: 2px solid;
+    height: 80%;
+    width:80%;
+    margin-left: 10%;
+    overflow-y: scroll;
+}
+
+
+
+#namesearch  {
+    margin:0px;
+}
+
+.namesList {
+    border: 0px solid;
+    height: 700px;
+    width: 1690px;
+    margin-left: 115px;
+
+    overflow-y: scroll;
+ }
+ 
+  ::-webkit-scrollbar {
+ 	width:4px;
+ }
+ 
+#nameslistspacer {
+ 	height:74px;
+ }
+#namesSearchBar {
+    margin:auto;
+    width:1400px;
+    margin-top: 100px;
+}
+
+.namesSearchButton {
+    color: rgb(255,255,255);
+    font-family: gotham;
+    font-size: 20pt;
+    font-weight: bold;
+    width: 130px;
+    height: 57px;
+    margin: 12px 20px 12px 20px;
+    border-style: none;
+    display:inline;
+    background-color: rgb(86,12,112);
+}
+
+#NamePanelView {
+	width:80%;
+	height:80%;
+	margin-left: 10%;
+}
+
+#NamePanelView h1 {
+	padding:0;
+	}
+.NameMetaView {
+	float: right;
+	width: 700px;
+	}
+
+#rightHand {
+    background-color: rgb(3,103,70);
+    top:430px;
+    left: 43.7%;
+}
+
+#searchbar {
+	margin-left: 400px;
+	margin-top:28px;
+}
+	
+.search_box {
+    background-color: transparent;
+    position: relative;
+    top:74px;
+    margin: 0 108px 0 108px;
+    width: 668px;
+    height: 629px;
+}
+#search_names {
+    display: none;
+}
+
+#search_results_box {
+    width: 816px;
+    height: 728px;
+    position: relative;
+    top:74px;
+    margin: 0 108px 0 108px;
+}
+
+.SecondaryNameView {
+	display: inline;
+	font-size: 12pt;
+	}
+	
+#StatsAndButtons {
+			position:absolute;
+			top:10px;
+			left:400px;
+}
+
+/****************************************
+ *
+ * About interface
+ *
+ ****************************************/
+
+#about {
+    display:none;
+	font-family: gotham;
+    background-color: rgb(180,40,46);
+   
+}
+#about h1{
+    font-size: 39pt;
+    text-align: left;
+    padding-top: 64px;
+}
+#factsbox {
+  
+
+}
+
+#credits {
+    display: none;
+    padding-left: 140px;
+    width: 70%;
+}
+#history {
+    display: none;
+    padding-left: 140px;
+    width: 70%;
+}
+#facts {
+    display: block;
+    width: 70%;
+    padding-left: 140px;
+}
+
+    
+#instructions {
+    display: none;
+    width: 50%;
+    margin-left: 25%;
+    border: 1px;
+    height: 80%;
+    background-color: rgb(180,40,46);
+    color: rgb(255,255,255);
+}
+
+#infobuttons {
+    background-color: transparent;
+    width:360px;
+    position: absolute;
+    top: 340px;
+    left: 1570px;
+ 
+}
+
+/****************************************
+ *
+ * Virtual quilt interface
+ *
+ ****************************************/
+
+#openseadragon1 {
+    width: 100%;
+    height: 100%;
+}
+
+
+ #explore {
+    display: none;
+     background-color: rgb(86,12,112);
+    
+}
+#explore h1{
+    font-size: 39pt;
+    text-align: left;
+    padding-top: 154px;
+}
+ 
+
+
+
+/****************************************
+ *
+ * Stories interface
+ *
+ ****************************************/
+#stories {
+    display: none;
+    background-color: rgb(3,103,70);
+  
+}
+#stories h1{
+    font-size: 39pt;
+    text-align: left;
+    padding-top: 154px;
+}
+#threads {
+    display: none;
+    background-color: rgb(3,103,70);
+    height: 90%;  
+
+}
+
+
+
+/******************************************
+ *
+ * leftovers
+ *
+ ******************************************/
+
+#block_view {
+    display: none;
+    background-color: rgb(213,71,40);
+    height: 80%;  
+}
+
+footer{
+    height: 100px; 
+    width:100%;
+    position: absolute;
+    left: 0;
+    bottom: 0; 
+}

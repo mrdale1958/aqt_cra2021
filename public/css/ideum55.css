@@ -1,0 +1,893 @@
+body {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    background-repeat:no-repeat;
+    background-image: url("heididesigns/AQT_LA_TouchScreen_bg_v3.png");    
+    margin: 0px;
+}
+
+DIV.movable {
+    position:relative;
+}
+::-webkit-scrollbar
+{
+  width: 1px;  /* for vertical scrollbars */
+  height: 1px; /* for horizontal scrollbars */
+}
+
+::-webkit-scrollbar-track {
+      background-color: rgb(209, 68, 20);
+} /* the new scrollbar will have a flat appearance with the set background color */
+ 
+::-webkit-scrollbar-thumb {
+      background-color: rgba(0, 0, 0, 0.2); 
+} /* this will style the thumb, ignoring the track */
+ 
+::-webkit-scrollbar-button {
+      background-color: rgb(209, 68, 20);
+} /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
+ 
+::-webkit-scrollbar-corner {
+      background-color: white;
+} /* if both the vertical and the horizontal bars appear, then perhaps the right bottom corner also needs to be styled */
+/**********************************************
+ *
+ *  Main buttons
+ *
+ **********************************************/
+
+
+.aboutBtn {
+    background-color: rgb(180,40,46);
+     display: inline-block;
+  
+
+}
+#aboutTriangle {
+    /*fill:rgb(180,40,46);*/
+	fill:black;
+ }
+ 
+#buttons {
+    margin-left:75px;
+    position:absolute;
+    top: 887px;
+}
+
+#buttons.home {
+    margin-left:69px;
+    position:absolute;
+    top: 887px;
+}
+
+.button_holder {
+    display: inline-block;
+	margin-top: 40px;
+    /*margin-top: 0px;*/
+    height: 100px; 
+    /*width:100%;*/
+    position: relative;
+    left: 300px;
+    bottom: 0; 
+
+}
+.buttons_holder {
+    width: 100%;
+    background-color: #ffffff;
+    display: none;
+}
+
+.creditsinner {
+    background-color:rgb(86,12,112);
+}
+
+
+.exploreBtn {
+    background-color: rgb(86,12,112);
+    display: inline-block;
+ 
+}
+
+#exploreTriangle {
+    fill:rgb(86,12,112);
+}
+
+.factsinner {
+    background-color:rgb(3,103,70);
+}
+
+
+.historyinner {
+    background-color:rgb(209, 68, 20);
+}
+
+.homeBtn {
+    display: inline-block;
+    background-color: transparent;
+    background-repeat:no-repeat;
+    border-style: none;
+    background-image: url("heididesigns/AQT_LA_TouchScreen_logo_v3-01.png");
+    background-size: contain;
+    width: 108px;
+    height:105px;
+    top: 30px;
+    left: 57px;
+    position:relative;
+}
+
+.homeBtn.home {
+    height: 117px;
+    width: 121px;
+    top: -634px;
+    left: 1588px;
+}
+.homeBtn.away {
+    width: 108px;
+    height:105px;
+    top: 30px;
+    left: 57px;
+}
+
+
+.innerNaviBtn {
+    color: rgb(255,255,255);
+    font-family: 'gotham medium', 'gotham-medium';
+    font-size: 30pt;
+       width: 351px;
+    height: 107px;
+    margin: 12px 0px 12px 0px;
+    border-style: none;
+}
+
+.namesBtn {
+    background-color: rgb(209, 68, 20);
+    display: inline-block;
+
+}
+
+
+#namesTriangle {
+    fill:rgb(209, 68, 20);
+}
+
+.naviBtn {
+    color: rgb(255,255,255);
+    font-family: gotham;
+    font-size: 30pt;
+    width: 303px;
+    height: 107px;
+    margin: 3px 6px 0px 6px;
+    border-style: none;
+}
+.naviBtn.home {
+    font-size: 34pt;
+    width: 407.5px;
+    height: 114px;
+    margin: 0px 12px 0px 12px;
+}
+
+
+.storiesBtn {
+    background-color: rgb(3,103,70);
+    display: inline-block;
+ 
+}
+
+#storiesTriangle {
+    fill:rgb(3,103,70);
+ }
+ 
+ .stretch {
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+}
+
+
+.triangle {
+    position:relative;
+  /*  display:none;*/
+    top:-68px;
+    left:240px;
+    width:54px;
+    height:50px;
+    margin-left:-58px;
+}
+
+/****************************************
+ *
+ * Home page interface
+ *
+ ****************************************/
+
+#splash {
+    background-image: "heididesigns/AQT_LA_TouchScreen_HOME_v4.png";    
+}
+
+.thin_title {
+    font-family: 'gotham book', 'gotham-book';
+    font-size: 110pt;
+    margin: 0px 60px 0px 0px ;
+}
+
+.thick_title {
+    font-family: 'gotham medium', 'gotham-medium';
+    font-size: 110pt;
+    margin: 0px 38px 0px 0px ;
+}
+
+#main_title {
+    position:absolute;
+    top: 342px;
+    left: 120px;
+    display: none;
+    z-index: 10;
+}
+
+#main_title.home {
+    display: block;
+}
+
+
+#quickfact {
+    /*position:absolute;*/
+    top: 664px;
+    left: 120px;    
+    font-family: 'gotham book', 'gotham-book';
+    font-size: 24pt;
+    color: rgb(175,38,38);
+     /*display: none;*/
+     z-index: 10;
+}
+
+
+#quickfact_label {
+    font-weight: bold;
+ }
+#quickfact_text {
+    font-weight: normal;
+ }
+
+.interface_box {
+    width:100%;
+    height: 872px;
+    color: white;
+    font-family: 'gotham book', 'gotham-book';
+    font-size:20pt;
+    z-index: 1000;
+   
+}
+
+/****************************************
+ *
+ * Names interface
+ *
+ ****************************************/
+
+ #alphabet {
+    display: inline;
+}
+
+#back_space {
+       width: 145px;
+    height: 132px;
+    background-color: rgb(86,12,112);
+    position: absolute;
+    top: 502px;
+    color: white;
+    text-align: center;
+}
+
+#back_space_x {
+    position: absolute;
+    top: 50px;
+    color: white;
+    text-align: center;
+    left: 68px;
+    position: absolute;
+    top: 37px;
+    left: 68;
+    font-family: 'gotham medium', 'gotham-medium';
+    font-size: 38pt;
+}
+
+#bs_icon {
+    position: absolute;
+    left:-2px;
+}
+
+.block_image {
+    float: left;
+    margin-left: 200px;
+}
+
+#namedBackTriangle {
+    fill:rgb(3,103,70);
+ }
+
+
+.dataView {
+
+}
+
+.embedded_instruction {
+    font-size: 12pt;
+}
+
+.gesture_box {
+    background-color: white;
+    height: 100%;
+    color: rgb(209, 68, 20);
+}
+
+#gesture_help {
+        background-color: rgb(180,40,46);
+    width: 145px;
+    height: 132px;
+    /* background-color: rgb(86,12,112); */
+    position: absolute;
+    top: 502px;
+    color: white;
+    text-align: center;
+    font-size: 38pt;
+}
+
+#gesture_help_i {
+        position: absolute;
+    top: 37px;
+    left: 68px;
+    font-family: 'gotham medium', 'gotham-medium';
+}
+
+.hand_button {
+    color: white;
+    width: 100%;
+    height: 30px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    font-weight: bold;
+    /* position: relative; */
+    /* float: right; */
+    margin: 12px 0 12px 0;
+}
+#hand_buttons {
+        width: 40%;
+        position: relative;
+        top: 360px;
+        
+}
+
+#help_icon {
+    position: absolute;
+    left:0;
+}
+
+#leftHand {
+    background-color: rgb(209, 68, 20);
+    top: 360px;
+
+}
+.letter {
+    color: rgb(255,255,255);
+    font-family: gotham;
+    font-size: 20pt;
+    font-weight: bold;
+    width: 351px;
+    height: 107px;
+    margin: 12px 20px 12px 12px;
+    border-style: none;
+    display:inline;
+    
+}
+
+.metakey {
+
+}
+
+.metavalue {
+
+}
+
+.nameNode {
+    display: inline-block;
+}
+.name {
+    display: inline-block;
+    color: rgb(255,255,255);
+    margin-right: 20px;
+    font-family: 'gotham book', 'gotham-book';
+}
+
+#namedBack {
+    position: absolute;
+    top:480px;
+}
+
+
+
+#names {
+    /*display: none;*/
+     background-color: rgb(209, 68, 20);
+     width: 100%;
+     height: 872px;
+     color: white;
+     font-family: 'gotham book', 'gotham-book';
+     font-size: 15pt;
+     z-index: 1000;
+}
+#names h1{
+    font-size: 39pt;
+    text-align: center;
+    padding-top: 114px;
+}
+
+
+.namesBox {
+    border: 2px solid;
+    height: 90%;
+    width: 96%;
+    margin-left: 2%;
+    overflow: hidden;
+}
+
+.nameRow {
+    display: table;
+    margin: 0 auto;
+}
+
+.NameMetaView {
+    display: inline;
+    float: right;
+    margin: 0 700px 0 200px;
+}
+
+.nameData h4 {
+    font-style: italic;
+    position: absolute;
+    top: 800px;
+left: 760px;
+}
+.namesList {
+    height: 772px;
+}
+
+.NamePanelView {
+
+}
+
+.NamePanelView h1{
+    font-size: 30pt;
+    text-align: center;
+    padding-top: 154px;
+
+}
+
+#namesearch  {
+    margin:0px;
+}
+
+#namesSearchBar {
+    margin:auto;
+    width:1800px;
+    margin-top: 30px;
+    margin-left: 55px;
+}
+
+.namesSearchButton {
+    color: rgb(255,255,255);
+    font-family: gotham;
+    font-size: 20pt;
+    font-weight: bold;
+    width: 130px;
+    height: 57px;
+    margin: 12px 20px 12px 20px;
+    border-style: none;
+    display:inline;
+    background-color: rgb(86,12,112);
+}
+
+#rightHand {
+    background-color: rgb(3,103,70);
+    top:430px;
+    left: 43.7%;
+}
+
+.search_box {
+    background-color: transparent;
+    /*position: relative;
+    top:74px;
+    margin: 0 108px 0 108px;
+    width: 668px;
+    height: 629px;
+    display: inline;*/
+}
+#search_names {
+    display: none;
+}
+
+.searchIcon {
+    vertical-align: -7px;
+    margin-left: 50px;
+    margin-right: 40px;
+}
+
+#search_input_box {
+    display:inline;
+    width: 816px;
+    height: 685px;
+    top:74px;
+    margin: 44px 0px 0 108px;
+}
+#search_results_box {
+    display:inline;
+    width: 816px;
+    height: 685px;
+    margin: 44px 108px 0 0px;
+}
+#StatsAndButtons {
+	top:10px;
+	left:400px;
+}
+
+.browseReturn {
+    background-color:rgb(3,103,70);
+    margin-top: 26;
+    font-size: 24pt;
+}
+#browseReturnBtnHolder {
+    display: inline-block;
+}
+
+.left {
+    float: left;
+    margin-left: 30px;
+}
+.right {
+    float: right;
+    margin-left: 1158px;
+}
+
+/****************************************
+ *
+ * About interface
+ *
+ ****************************************/
+
+#about {
+    /*display:none;*/
+	background-color: rgb(180,40,46);
+	 width: 100%;
+	 height: 872px;
+	 color: white;
+	 font-family: 'gotham book', 'gotham-book';
+	 font-size: 18pt;
+	 z-index: 1000;
+	 /*float: right;*/
+   
+}
+#about h1{
+    font-size: 39pt;
+    text-align: left;
+    padding-top: 50px;
+    margin-top: 0px;
+}
+#factsbox {
+    padding-left: 140px;
+
+}
+
+#credits {
+    display: none;
+    padding-left: 140px;
+    width: 70%;
+}
+#history {
+    display: none;
+    padding-left: 140px;
+    width: 70%;
+}
+#facts {
+    display: block;
+    width: 70%;
+    padding-left: 140px;
+}
+
+    
+#instructions {
+    display: none;
+    width: 50%;
+    margin-left: 25%;
+    border: 1px;
+    height: 80%;
+    background-color: rgb(180,40,46);
+    color: rgb(255,255,255);
+}
+
+#infobuttons {
+    background-color: transparent;
+    width:360px;
+    position: absolute;
+    top: 340px;
+    left: 1570px;
+ 
+}
+
+/****************************************
+ *
+ * Virtual quilt interface
+ *
+ ****************************************/
+
+.ocd-div {
+  position: relative;
+  height:872px;
+  width:100%;
+  background-color: rgb(86, 12, 112);
+}
+
+#openseadragon1 {
+     width: 100%;
+    height: 100%;
+    background: rgb(86,12,112);
+}
+
+
+ #explore {
+    display: none;
+     background-color: rgb(73,35,101);
+    
+}
+#explore h1{
+    font-size: 39pt;
+    text-align: left;
+    padding-top: 154px;
+}
+ 
+.navigator .highlight{
+    opacity:    0.9;
+    filter:     alpha(opacity=40);
+    outline:    2px solid #900;
+    background-color: #900;
+}
+.highlight{
+    opacity:    0.5;
+    filter:     alpha(opacity=40);
+    outline:    14px auto #0A7Eff;
+    background-color: white;
+}
+.highlight:hover, .highlight:focus{
+    filter:     alpha(opacity=70);
+    opacity:    0.7;
+    background-color: transparent;
+}
+
+
+
+/****************************************
+ *
+ * Stories interface
+ *
+ ****************************************/
+#stories {
+    /*display: none;*/
+    background-color: rgb(3,103,70);
+     width: 100%;
+     height: 872px;
+     color: white;
+     font-family: 'gotham book', 'gotham-book';
+     font-size: 18pt;
+     z-index: 1000;
+     /*float: right;*/
+   
+}
+#stories h1{
+    font-size: 30pt;
+    text-align: center;
+    padding-top: 154px;
+}
+
+.tourThumbnail {
+    width: 150px;
+    margin: 20px;
+    display: inline-block;
+}
+
+#threads {
+    display: none;
+    background-color: rgb(3,103,70);
+    height: 90%;  
+
+}
+#threadBack {
+
+}
+
+#threadNext {
+
+}
+
+#threadsbox {
+    width: 100%;
+    height: 872px;  
+    background-size: 100% 100%;  
+}
+
+.threadTriangle {
+    fill:rgb(3,103,70);
+    position:absolute;
+    left:0;
+ }
+.threadTrianglebg {
+    fill:rgb(255,255,255);
+ }
+
+#threadBackArrow {
+    position: absolute;
+    top:780px;
+    left:30px;
+}
+#threadNextArrow {
+    position: absolute;
+    top:780px;
+    right:30px;
+    width:300px;
+    height:150px;
+}
+
+.threadTitle {
+    width: 50%;
+    margin: 20px;
+    margin-left: 0%;
+    padding: 20px;
+    background-color: rgb(180,40,46);
+    color: rgb(255,255,255); 
+    text-align: center;
+    font-size:40pt;
+    font-weight: bolder;
+    text-transform: capitalize;
+   
+}
+
+.threadHorizontalImage {
+    display:block;
+
+    position: absolute;
+    top: 130px;
+    left: 50%;
+    width:80%;
+    margin-left:-50%;
+}
+.threadVerticalImage {
+    display:block;
+
+    position: absolute;
+    top: 130px;
+    margin-left:150px;
+}
+.threadImg {
+    display:block;
+    margin: 0 auto;
+}
+
+.threadAudio
+{
+    position: absolute;
+    top: 100px;
+    left: 1800px;
+}
+.threadVideo
+{
+    position: absolute;
+    top: 100px;
+    left: 400px;
+}
+.threadsSubtitle {
+    margin-left:60px;
+}
+
+.threadSubtitle
+{
+    position: absolute;
+    top: 400px;
+    left: 100px;
+    width:1200px;
+    margin-left:50px;
+    font-size: 28pt;
+    text-shadow: 2px 2px 0x0;
+}
+.threadHeading
+{
+    position: absolute;
+    top: 35px;
+    left: 1200px;
+    font-size: 24pt;
+    text-shadow: 2px 2px 0x0;
+}
+.threadVerticalTexts
+{
+    position: absolute;
+    top: 100px;
+    left: 900px;
+    width:500px;
+}
+.threadHorizontalTexts
+{
+    position: absolute;
+    top: 120px;
+    left: 100px;
+    width:800px;
+}
+.threadText {
+    margin:30px;
+    font-size:28pt;
+}
+.threadVerticalQuotes
+{
+    position: absolute;
+    top: 350px;
+    left: 600px;
+    width: 750px;
+}
+.threadHorizontalQuotes
+{
+    position: absolute;
+    top: 675px;
+    left: 150px;
+    width: 1300px;
+}
+.threadQuote
+{
+    font-size:16pt;
+}
+.threadByline
+{
+    position: relative;
+    top: 10px;
+    left: 800px;
+    width: 500px;
+}
+
+.TOCBox {
+    width:1000px;
+    margin-left:27%;
+}
+
+.TOCTitle {
+margin-left:130px;
+}
+#TOCSpacer {
+    height:100px;
+}
+.vimeoPlayer {
+    position: absolute;
+    top: 100px;
+    left: 400px;
+}
+
+
+/******************************************
+ *
+ * leftovers
+ *
+ ******************************************/
+
+#block_view {
+    display: none;
+    background-color: rgb(213,71,40);
+    height: 80%;  
+}
+
+footer{
+    height: 100px; 
+    width:100%;
+    position: relative;
+    left: 0;
+    bottom: 0; 
+}
+
+#innerMain{
+	height:845px;
+}
