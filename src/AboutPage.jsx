@@ -54,9 +54,9 @@ class AboutPage extends React.Component{
 	{
 		this.setState({infoblock: newinfoblock});
 	}
-	componentWillMount() {
+	//componentWillMount() {
 		//var _this = this;
-		console.log("grabbing auth");
+		//console.log("grabbing auth");
 	    // this.serverRequest = 
 	    //   axios
 	    //   .get("http://quilt.utdallas.edu/collectiveaccess/providence/service.php/find/ca_objects?q=*&pretty=1",
@@ -77,7 +77,7 @@ class AboutPage extends React.Component{
 		//         });
 		//         _this.generateDivs();
 	    //     })
-	}
+	//}
 	render() {
 		var activeBox = <div></div>;
 		var info, title, subtitle, video;
